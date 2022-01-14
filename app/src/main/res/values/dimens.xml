@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="default_padding_normal">16dp</dimen>
+    <dimen name="default_padding_small">8dp</dimen>
+    <dimen name="default_padding_extra_small">4dp</dimen>
+
+    <dimen name="text_size_main">16sp</dimen>
+    <dimen name="text_size_high">18sp</dimen>
+    <dimen name="text_size_middle">14sp</dimen>
+    <dimen name="text_size_small">12sp</dimen>
+
+    <dimen name="image_item_transportation_width">124dp</dimen>
+    <dimen name="image_item_transportation_height">64dp</dimen>
+    <dimen name="image_app_bar_transportation_measure">42dp</dimen>
+</resources>

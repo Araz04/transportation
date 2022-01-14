@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/container_rv_item_transportation"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/default_padding_small"
+    android:background="@drawable/shape_rectangle_light_gray_radius_bg"
+    android:layout_marginStart="@dimen/default_padding_small"
+    android:layout_marginEnd="@dimen/default_padding_small"
+    android:layout_marginTop="@dimen/default_padding_small">
+
+    <ImageView
+        android:id="@+id/iv_item_transportation_cover"
+        android:layout_width="@dimen/image_item_transportation_width"
+        android:layout_height="@dimen/image_item_transportation_height"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_item_transportation_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/LabelTransportationItemDark"
+        android:text="Name"
+        app:layout_constraintEnd_toStartOf="@+id/tv_item_transportation_point"
+        android:layout_marginStart="@dimen/default_padding_normal"
+        app:layout_constraintBottom_toTopOf="@+id/tv_item_transportation_price"
+        app:layout_constraintTop_toTopOf="@id/iv_item_transportation_cover"
+        app:layout_constraintStart_toEndOf="@id/iv_item_transportation_cover"/>
+
+    <TextView
+        android:id="@+id/tv_item_transportation_price"
+        android:layout_width="0dp"
+        style="@style/LabelTransportationItemDark"
+        android:layout_height="wrap_content"
+        android:textColor="@color/text_color_gray_title"
+        android:text="$30"
+        android:layout_marginStart="@dimen/default_padding_normal"
+        app:layout_constraintTop_toBottomOf="@id/tv_item_transportation_name"
+        app:layout_constraintEnd_toStartOf="@+id/tv_item_transportation_point"
+        app:layout_constraintBottom_toTopOf="@+id/tv_item_transportation_type"
+        app:layout_constraintStart_toEndOf="@id/iv_item_transportation_cover"/>
+
+    <TextView
+        android:id="@+id/tv_item_transportation_type"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        style="@style/LabelTransportationItemLight"
+        android:text="Type"
+        android:textColor="@color/text_color_gray_transport_type"
+        app:layout_constraintEnd_toStartOf="@+id/tv_item_transportation_point"
+        android:layout_marginStart="@dimen/default_padding_normal"
+        app:layout_constraintTop_toBottomOf="@id/tv_item_transportation_price"
+        app:layout_constraintBottom_toBottomOf="@id/iv_item_transportation_cover"
+        app:layout_constraintStart_toEndOf="@id/iv_item_transportation_cover"/>
+
+    <TextView
+        android:id="@+id/tv_item_transportation_point"
+        android:layout_width="wrap_content"
+        style="@style/LabelTransportationItemDark"
+        android:text="0"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/text_size_middle"
+        android:paddingEnd="@dimen/text_size_small"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/iv_item_transportation_arrow"/>
+
+    <ImageView
+        android:id="@+id/iv_item_transportation_arrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/default_padding_small"
+        android:src="@drawable/image_arrow_right"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
